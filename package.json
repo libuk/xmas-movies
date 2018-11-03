@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon ./src/server/index.js",
     "start": "node ./src/server/index.js"
   },
   "author": "Daniel Liburd",
@@ -11,5 +12,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "js-yaml": "3.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
   }
 }
