@@ -1,2 +1,6 @@
+# Common
 node_modules
 .vscode
+
+# Output dir of TS
+build
