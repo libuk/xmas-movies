@@ -1,7 +1,17 @@
 const express = require('express');
+const getMovies = require('../movies/index');
+
+// SERVER SET UP
 const app = express();
 const port = 3000;
 
-app.get('/', (req, res) => res.send('Hello World!'));
+// DOTENV
+require('dotenv').config();
+
+app.get('/', async (req, res) => {
+  const movies = await getMovies();
+  console.log(movies);
+  res.send('Hello World!');
+});
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
