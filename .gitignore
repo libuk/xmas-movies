@@ -1,6 +1,7 @@
 # Common
 node_modules
 .vscode
+.env
 
 # Output dir of TS
 build
