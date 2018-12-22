@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "dev": "nodemon ./src/server/index.js",
     "start": "npm install && node ./src/server/index.js"
