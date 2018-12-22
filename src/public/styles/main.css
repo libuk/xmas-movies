@@ -52,12 +52,6 @@ html {
   color: #fff;
 }
 
-.movie-item:focus,
-.movie-item:hover {
-  background-color: #ff2424;
-  color: #fff;
-}
-
 .random-movie {
   position: fixed;
   bottom: 0;
