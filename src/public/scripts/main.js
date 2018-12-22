@@ -9,6 +9,10 @@
     { name: 'Finding Dory', shortcode: 'fdo' },
     { name: 'Love Actually', shortcode: 'lva' },
     { name: 'Coco', shortcode: 'coc' },
+    { name: 'This Christmas', shortcode: 'tcr' },
+    { name: 'Moana', shortcode: 'moa' },
+    { name: 'The Prestige', shortcode: 'pre' },
+    { name: 'The Godfather', shortcode: 'god' },
   ];
 
   const SELECTED_CLASS = 'selected';
@@ -21,7 +25,7 @@
   init();
 
   function appendMovies(movies) {
-    const moviesContainer = document.querySelector('.movies');
+    const moviesContainer = document.querySelector('[name="movies-list"');
 
     movies.forEach(movie => {
       // Create list item element
