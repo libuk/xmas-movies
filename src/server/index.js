@@ -1,17 +1,16 @@
 const express = require('express');
-const getMovies = require('../movies/index');
+const movies = require('../movies');
 
 // SERVER SET UP
 const app = express();
 const port = 3000;
 
-// DOTENV
-require('dotenv').config();
+app.set('view engine', 'pug');
+app.set('views', './src/views');
+app.use(express.static('./src/public'));
 
 app.get('/', async (req, res) => {
-  const movies = await getMovies();
-  console.log(movies);
-  res.send('Hello World!');
+  res.render('index', { movies });
 });
 
 app.listen(port, () => console.log(`App listening on port ${port}!`));
