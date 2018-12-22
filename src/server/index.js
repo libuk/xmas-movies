@@ -1,5 +1,4 @@
 const express = require('express');
-const movies = require('../movies');
 
 // SERVER SET UP
 const app = express();
