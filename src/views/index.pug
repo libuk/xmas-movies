@@ -1,11 +1,12 @@
-html
-  head
-    title= "Xmas Movies"
+html(lang="en")
+  include includes/head.pug
   body
-    h1= "Dan & Seyi's Xmas Movie Picker"
-    div.selected-movie
-      span.selected-movie-title
-    ul.movies
-    div.random-movie
-      button(class='random-movie-btn' data-random-movie-btn) Pick a movie at random
-    script(src='/scripts/main.js')
+    div.wrapper
+      h1(class="title") Dan & Seyi's Xmas Movie Picker
+      div.selected-movie
+        span.selected-movie-title
+      div.movies
+        ul(class="movies-list" name="movies-list")
+      div.random-movie
+        button(class='random-movie-btn' data-random-movie-btn) Click here to pick a movie
+      script(src='/scripts/main.js')
